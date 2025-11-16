@@ -1,0 +1,1 @@
+"""Telegram diary transcription bot."""
