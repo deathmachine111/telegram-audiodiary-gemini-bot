@@ -1,3 +1,2 @@
 python-telegram-bot[all]>=21.0
 python-dotenv>=1.0.0
-./gemini-transcriber
