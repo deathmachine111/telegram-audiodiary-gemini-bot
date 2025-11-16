@@ -51,9 +51,6 @@ htmlcov/
 *.tmp
 *.log
 
-# Dependencies (if using local paths)
-gemini-transcriber/
-
 # Claude Code settings
 .claude/
 
