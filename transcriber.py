@@ -1,6 +1,6 @@
 """
 Gemini API transcriber for audio files.
-Core transcription logic extracted from call-records project.
+Core transcription logic for telegram audio diary bot.
 """
 import base64
 import os

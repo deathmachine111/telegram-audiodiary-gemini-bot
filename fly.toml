@@ -1,20 +1,13 @@
-# fly.toml app configuration file generated for telegram-audiodiary-bot on 2025-11-16T16:17:57+05:30
+# fly.toml app configuration file generated for telegram-audiodiary-bot-late-paper-9930 on 2025-11-16T16:19:08+05:30
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'telegram-audiodiary-bot'
+app = 'telegram-audiodiary-bot-late-paper-9930'
 primary_region = 'sin'
 
 [build]
   dockerfile = 'Dockerfile'
-
-[[processes]]
-  type = 'app'
-  cmd = 'python main.py'
-
-[env]
-  # Environment variables will be set via flyctl secrets set
 
 [[vm]]
   memory = '1gb'

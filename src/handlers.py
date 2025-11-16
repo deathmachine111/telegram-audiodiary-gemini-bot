@@ -7,7 +7,9 @@ from pathlib import Path
 import tempfile
 from telegram import Update
 from telegram.ext import ContextTypes
-from gemini_transcriber import GeminiTranscriber
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from transcriber import GeminiTranscriber
 
 logger = logging.getLogger(__name__)
 
