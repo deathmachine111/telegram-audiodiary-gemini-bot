@@ -1,0 +1,23 @@
+# Fly.io configuration for Telegram Audio Diary Bot
+app = "telegram-audiodiary-bot"
+primary_region = "sin"  # Singapore (adjust if needed: lax, iad, lhr, etc.)
+
+[build]
+dockerfile = "Dockerfile"
+
+[env]
+# Your environment variables will be set via Fly CLI
+# Do NOT commit actual tokens here
+# They'll be set with: flyctl secrets set VARIABLE_NAME=value
+
+[processes]
+bot = "python main.py"
+
+[services]
+# This is a polling bot, doesn't need external ports
+# But Fly requires at least one service defined
+
+[[services.ports]]
+port = 8080
+handlers = ["http"]
+force_https = false
